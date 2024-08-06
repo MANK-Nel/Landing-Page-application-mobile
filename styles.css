@@ -1,0 +1,335 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #4CAF50;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    display: inline-block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+}
+
+.contact form, .login form, .register form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h1, .login h1, .register h1, .privacy h1, .terms h1 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navigation a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    .logo {
+        display: block;
+        margin: 0 auto;
+        width: 800px;
+    }
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2rem; /* Réduire la taille pour les petits écrans */
+        text-align: center; /* Centrer le texte pour les petits écrans */
+        margin: 0 auto; /* Centrer le logo horizontalement */
+    }
+}
+
+
+
+
+/* Colors */
+:root {
+    --primary-color: #1A73E8;
+    --secondary-color: #34A853;
+    --accent-color: #FBBC05;
+    --background-color: #FFFFFF;
+    --text-color: #202124;
+    --text-secondary-color: #ffffff;
+    --border-color: #E0E0E0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+
+        
+        font-weight: bold;
+        color: white; /* Assurez-vous que la couleur contraste bien avec le fond */
+        text-transform: uppercase;
+        letter-spacing: 0.1rem; /* Ajouter de l'espacement entre les lettres */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ajouter une ombre au texte */
+        font-family: 'Arial Black', sans-serif; /* Utiliser une police plus épaisse */
+    }
+    
+
+
+/* Styles pour les images des badges de l'App Store et du Google Play Store */
+.store-badge {
+    width: 150px; /* Vous pouvez ajuster la taille selon vos besoins */
+    margin: 10px;
+}
+
+/* Ajout pour centrer le logo */
+.logo img {
+    width: 80px; /* Taille recommandée, ajustez si nécessaire */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Modification pour les liens du footer */
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.navigation a {
+    color: var(--background-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);s
+}
+
+.hero-image {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.terms {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: var(--text-secondary-color);
+}
+
+/* Features Section */
+.features {
+    background-color: var(--background-color);
+    padding: 50px 20px;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #1A73E8; /* Optionnel, pour s'assurer que le fond du footer soit cohérent */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero-content {
+        flex-direction: row;
+    }
+
+    .hero-image {
+        margin-top: 0;
+    }
+
+    .feature {
+        display: inline-block;
+        width: 45%;
+        margin: 0 2.5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .feature {
+        width: 22%;
+        margin: 0 1%;
+    }
+}
+
